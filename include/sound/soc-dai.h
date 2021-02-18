@@ -220,11 +220,14 @@ struct snd_soc_dai {
 	/* DAI private data */
 	void *private_data;
 
-	/* parent codec/platform */
-	union {
-		struct snd_soc_codec *codec;
-		struct snd_soc_platform *platform;
-	};
+//	/* parent codec/platform */
+//	union {
+//		struct snd_soc_codec *codec;
+//		struct snd_soc_platform *platform;
+//	};
+
+	/* parent platform */
+	struct snd_soc_platform *platform;
 
 	struct list_head list;
 };
